@@ -8,6 +8,9 @@ import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+// Reads the input file and searches for a specific Registration Number Pattern.
+// Returns an ArrayList of car registration numbers
+
 public class GetCarRegFromFile {
 
     public static String inputFilePath;

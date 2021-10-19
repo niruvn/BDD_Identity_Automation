@@ -3,7 +3,7 @@ package com.coreLibriaries;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
+//TO DO waits for each element
 public class FindElementBy {
     protected WebDriver driver;
     protected WebDriverWait wait;

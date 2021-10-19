@@ -6,6 +6,13 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+
+import static java.lang.String.format;
+
+// All the page related elements and actions go here
 public class CarTaxHomePage extends Page {
 
     public CarTaxHomePage(WebDriver driver) {
@@ -30,5 +37,6 @@ public class CarTaxHomePage extends Page {
     public void submitFreeCarCheck(){
         freeChcekButton.click();
     }
+
 
 }

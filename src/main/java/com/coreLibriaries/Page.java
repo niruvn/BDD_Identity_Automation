@@ -7,7 +7,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import static org.apache.commons.lang3.StringUtils.EMPTY;
 
-// All page objects should extend this class.
+// All page objects should extend this class and methods can be overwritten in the child class
+
 public abstract class Page {
     protected WebDriver driver;
     protected WebElement element;

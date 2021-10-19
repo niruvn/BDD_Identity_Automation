@@ -8,6 +8,11 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.util.HashMap;
+
+import static java.lang.String.format;
+
+// All the page related elements and actions go here
 public class VehicleDetailsPage extends Page {
     protected WebDriverWait wait;
 
@@ -99,5 +104,22 @@ public class VehicleDetailsPage extends Page {
             return year.getText();
         }
         return "";
+    }
+
+    public HashMap<String, String> getVehicleDetails(WebDriver driver, String regNumber){
+        HashMap<String, String> innerMap = new HashMap<String, String>();
+        if (isVehicleFound()) {
+            if (getRegNumber().equals(regNumber)) {
+                innerMap.put("make", getMake());
+                innerMap.put("model", getModel());
+                innerMap.put("color", getColour());
+                innerMap.put("year", getYear());
+            } else if (isVehicleNotFound()) {
+                System.out.println(format("Vehicle details NOT found on the website for %s", regNumber));
+                innerMap.put("make", "NOT FOUND");
+                clickOnTryAgain();
+            }
+        }
+        return innerMap;
     }
 }

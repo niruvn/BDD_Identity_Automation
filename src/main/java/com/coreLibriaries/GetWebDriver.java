@@ -7,7 +7,8 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import java.util.concurrent.TimeUnit;
 
-
+//Reads browser properties from ConfigReader, sets the timeout and returns the WebDriver
+//TO DO Capabilities, profile etc..
 public class GetWebDriver {
     public static WebDriver driver;
 

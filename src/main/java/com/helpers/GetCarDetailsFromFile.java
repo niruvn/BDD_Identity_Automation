@@ -7,6 +7,9 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
+//Reads the comma separated (csv style) output text file and
+// returns the HashMap with car details for each registration number
+
 public class GetCarDetailsFromFile {
     public static String outFilePath;
     private static Map<String, HashMap<String, String>> outputMap = new HashMap<String, HashMap<String, String>>();

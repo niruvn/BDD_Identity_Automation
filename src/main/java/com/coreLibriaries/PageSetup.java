@@ -4,6 +4,8 @@ import org.apache.commons.lang3.StringUtils;
 import org.openqa.selenium.WebDriver;
 import java.lang.reflect.Constructor;
 
+//Instantiate the page and Sets up the Page under test
+
 public class PageSetup {
     public static String APP_URL = ConfigReader.getProperty("url");
     private final WebDriver webDriver;

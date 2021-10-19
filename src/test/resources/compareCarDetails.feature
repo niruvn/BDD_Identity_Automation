@@ -12,6 +12,6 @@ Feature: Compare car details on cartaxcheck website with the output file
     And Search car details for each registration number
     Then compare the results with the output file and highlight the mismatches
     Examples:
-      | inputFile | outputFile |
-      | car_input.txt  | car_output.txt   |
-      | car_input_2.txt  | car_output_2.txt   |
+      | inputFile         | outputFile        |
+      | car_input.txt     | car_output.txt    |
+      | car_input_2.txt   | car_output_2.txt  |
