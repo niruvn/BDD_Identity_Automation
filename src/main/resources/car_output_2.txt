@@ -1,0 +1,3 @@
+REGISTRATION,MAKE,MODEL,COLOR,YEAR
+BW57BOW,Toyota,Yaris T2,Black,2010
+KT17DLX,Skoda,Superb Sportline Tdi S-A,White,2017
